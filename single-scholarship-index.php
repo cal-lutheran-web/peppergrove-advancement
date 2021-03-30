@@ -1,13 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title><?php the_title(); ?> | Cal Lutheran</title>
+</head>
+<body>
+
+
+
 <?php
-
-
-if(isset($_GET['metadata'])){
-
-	// just page meta data to be used in HTML head
-
-	echo '<title>'.get_the_title().' | Cal Lutheran</title>';
-
-} else {
 
 	// page content
 
@@ -107,9 +108,11 @@ if(isset($_GET['metadata'])){
 
 	echo '</div></div>';
 
-}
-
-
 
 ?>
 
+
+
+
+</body>
+</html>
