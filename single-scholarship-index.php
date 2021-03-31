@@ -39,7 +39,7 @@
 		// sidebar
 		
 		echo '
-			<p><a href="'.$donation_url.'?fund='.get_field('fund_id').'" class="btn btn-large btn-arrow-right block green">Support this Scholarship</a></p>
+			<p><a href="'.donation_url().'?fund='.get_field('fund_id').'" class="btn btn-large btn-arrow-right block green">Support this Scholarship</a></p>
 			<p><strong><a href="index.html" class="icon-line-arrow-left">Find Other Scholarships</a></strong></p>
 		';
 

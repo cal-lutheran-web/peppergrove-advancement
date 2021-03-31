@@ -1,6 +1,9 @@
 <?php
 
-	$donation_url = '/giving/donate/special-gifts.html';
+
+
+	function donation_url(){ return '/giving/donate/special-gifts.html'; }
+
 	
 	function get_data_url(){
 		return 'https://www.callutheran.edu/_resources/php/wp-templates/template-parts/advancement/scholarships/scholarships-data.php';
@@ -8,7 +11,7 @@
 	
 	function get_detail_url($post){
 
-		$link = (get_the_content() !== '') ? 'detail.html?id='.$post->post_name : $donation_url.'?fund='.get_field('fund_id');
+		$link = (get_the_content() !== '') ? 'detail.html?id='.$post->post_name : donation_url().'?fund='.get_field('fund_id');
 		
 		return $link;
 	}
