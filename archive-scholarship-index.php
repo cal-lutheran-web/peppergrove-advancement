@@ -123,9 +123,8 @@ foreach($taxonomies as $taxonomy){
 	
 	
 	<template x-ref="loadingItems">
-		
+		<?php echo scholarship_item(null, 'tile-loading'); ?>
 	</template>
-	
 	
 </div>
 
