@@ -11,7 +11,7 @@
 	
 	function get_detail_url($post){
 
-		$link = (get_the_content() !== '') ? 'detail.html?id='.$post->post_name : donation_url().'?fund='.get_field('fund_id');
+		$link = (get_the_content() !== '') ? 'detail.html?id='.$post->ID : donation_url().'?fund='.get_field('fund_id');
 		
 		return $link;
 	}
