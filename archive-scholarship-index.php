@@ -52,7 +52,7 @@ foreach($taxonomies as $taxonomy){
 	foreach( $terms as $term ){
 		$tab_content .= '
 		<li>
-			<button class="btn-borderless btn-sans-font scholarships-category-button" @click="getSearchResults("'.$tax_slug.'='.$term->term_id.'", true)">'.$term->name.'</button>
+			<button class="btn-borderless btn-sans-font scholarships-category-button" @click="getSearchResults(\''.$tax_slug.'='.$term->term_id.'\', true)">'.$term->name.'</button>
 		</li>';
 	}
 	
