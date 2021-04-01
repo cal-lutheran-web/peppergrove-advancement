@@ -52,7 +52,7 @@ foreach($taxonomies as $taxonomy){
 	foreach( $terms as $term ){
 		$tab_content .= '
 		<li>
-			<button class="btn-borderless btn-sans-font scholarships-category-button" @click="getSearchResults(\''.$tax_slug.'='.$term->term_id.'\', true)">'.$term->name.'</button>
+			<button class="btn-borderless btn-sans-font scholarships-category-button" @click="getSearchResults("'.$tax_slug.'='.$term->term_id.'", true)">'.$term->name.'</button>
 		</li>';
 	}
 	
@@ -93,7 +93,7 @@ foreach($taxonomies as $taxonomy){
 	
 	<header class="section-title" x-ref="resultsTitle"><?php echo '' ?></header>
 	
-	<div class="scholarship-search-loading" :class="{ \'show\': loadingMessage !== \'\' }">
+	<div class="scholarship-search-loading" :class="{ 'show': loadingMessage !== '' }">
 		<div class="scholarship-search-loading-message" x-text="loadingMessage"></div>
 	</div>
 	
