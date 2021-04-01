@@ -21,7 +21,7 @@
 		
 		$title = ($post !== null) ? $post->post_title : '';
 
-		$subtitle = (get_field('summary')) ? '<p class="tile-description">'.strip_tags(get_field('summary')).'</p>' : '';
+		$subtitle = ($post !== null && get_field('summary')) ? '<p class="tile-description">'.strip_tags(get_field('summary')).'</p>' : '';
 		
 		$css = ($class !== null) ? $class : '';
 		
