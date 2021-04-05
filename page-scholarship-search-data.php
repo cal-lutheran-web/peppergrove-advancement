@@ -19,7 +19,7 @@ if(!empty($_GET)){
 // if search is set
 if(isset($_GET['search'])){
 
-	$title = 'Search Results for <strong>'.$_GET['search'].'</strong>';
+	$title = 'Search Results';
 
 	$args = array(
 		's' => $_GET['search']
